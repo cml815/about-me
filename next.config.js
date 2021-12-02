@@ -3,7 +3,7 @@ module.exports = {
 }
 
 // next.config.js
-const hasMDX = require('@next/mdx')({
+const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 });
 
@@ -12,6 +12,6 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
 };
 
-/** Wrap the config so it can add all of the necessary configuration to process MDX iles. */
-module.exports = hasMDX(nextConfig);
+/** Wrap the config so it can add all of the necessary configuration to process MDX files. */
+module.exports = withMDX(nextConfig);
 

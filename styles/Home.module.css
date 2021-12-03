@@ -2,6 +2,16 @@
   padding: 0 2rem;
 }
 
+.navMenu {
+  background-color: #efefef;
+  height: 2rem;
+}
+
+.navLinks a {
+  padding: 1rem;
+  color: purple;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

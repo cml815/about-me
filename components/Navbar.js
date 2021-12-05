@@ -3,10 +3,11 @@ import styles from './navbar.module.css'
 
 export default function Navbar () {
   return (
-    <ul>
-      <li className={styles.menuLinks}>
+  <nav className={styles.navWrap}>
+    <ul className={styles.menuLinks}>
+      <li>
         <Link href="/">
-          <a className="coloring">Home</a>
+          <a>Home</a>
         </Link>
       </li>
       <li>
@@ -20,5 +21,6 @@ export default function Navbar () {
         </Link>
       </li>
     </ul>
+    </nav>
   )
 }

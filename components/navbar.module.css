@@ -1,14 +1,19 @@
-
-.coloring {
-  color: red;
+.navWrap {
+  background-color: gray;
+  height: 10vh;
 }
 
 .menuLinks {
-  display: flex;
-  padding: .8em;
+ display: flex;
 }
 
-.menu-links a {
-  font-size: 1rem;
+.menuLinks li {
+  padding: .8rem;
+  justify-content: right;
+  
+}
+
+.menuLinks li a {
   color: blue;
+  list-style-type: none;
 }

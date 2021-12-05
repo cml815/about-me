@@ -2,3 +2,13 @@
 .coloring {
   color: red;
 }
+
+.menuLinks {
+  display: flex;
+  padding: .8em;
+}
+
+.menu-links a {
+  font-size: 1rem;
+  color: blue;
+}

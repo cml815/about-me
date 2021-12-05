@@ -6,7 +6,7 @@ export default function Navbar () {
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a className="coloring">Home</a>
         </Link>
       </li>
       <li>

@@ -5,11 +5,11 @@
 
 .menuLinks {
  display: flex;
+ justify-content: flex-end;
+ gap: 1.5rem;
 }
 
-.menuLinks li {
-  padding: .8rem;
-  justify-content: right;
+.menuItem {
   
 }
 

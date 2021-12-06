@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
+import styles from '../components/layout.module.css'
 import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <title>CL</title>
@@ -73,6 +75,7 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }

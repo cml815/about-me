@@ -8,9 +8,6 @@ import Navbar from '../components/Navbar'
 export default function About () {
   return (
   <Layout>
-    <Head>
-      <title>About</title>
-    </Head>
     <h1>About</h1>
     <h2>
         <Link href="/">

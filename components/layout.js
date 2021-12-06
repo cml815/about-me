@@ -3,10 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-
-
+import Navbar from '../components/Navbar'
 export default function Layout ({ children }) {
-  return
+  return (
   <> 
   <Head>
     <link rel="icon" href="/favicon.ico" />
@@ -15,7 +14,10 @@ export default function Layout ({ children }) {
       content="Learn about writer and web designer Caroline Leopold. View portfolio."
         />
   </Head>
-  <div className={styles.headline}>{children}</div>
+  <Navbar />
+  <main>{children}</main>
   </>
+  )
 }
+// <div className={styles.headline}>{children}</div> 
 

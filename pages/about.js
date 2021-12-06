@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from './../components/layout'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 
 export default function About () {
   return (
-  <>
+  <Layout>
     <Head>
       <title>About</title>
     </Head>
@@ -16,7 +17,7 @@ export default function About () {
           <a>Back to home</a>
         </Link>
       </h2>
-  </>
+  </Layout>
   )
   
 }

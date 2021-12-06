@@ -4,7 +4,20 @@ import Image from 'next/image'
 import styles from '../components/layout.module.css'
 import Navbar from '../components/Navbar'
 
-export default function Home() {
+// https://nextjs.org/learn/basics/assets-metadata-css/polishing-layout
+
+import { getSortedPostsData } from '../lib/posts'
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({ allPostsData }) {
   return (
     <>
     <div className={styles.container}>
@@ -61,6 +74,13 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <section>
+        <h2>Blog</h2>
+        <a href="https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops"
+        />
+        
+      </section>
+
       </main>
 
       <footer className={styles.footer}>

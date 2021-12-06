@@ -1,3 +1,10 @@
+.footer {
+  background-color: pink;
+  height: 10vh;
+  display: flex;
+
+}
+
 .headline {
   font-size: 3rem;
   color: red;

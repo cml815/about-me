@@ -75,9 +75,9 @@ export default function Home({ allPostsData }) {
           </a>
         </div>
         <section>
-        <h2>Blog</h2>
-        <a href="https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops"
-        />
+        <h2>Add Blog Section Here</h2>
+        <a href="https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops">Link to Tutorial</a>
+
         
       </section>
 

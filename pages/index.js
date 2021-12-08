@@ -37,7 +37,6 @@ export default function Home({ allPostsData }) {
         <h2 className={styles.title}>
         (Creative&#41; Technical Designer and Writer
         </h2>
-
         </section>
        
         <p className={styles.description}>

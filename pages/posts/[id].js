@@ -20,11 +20,12 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <br />
-      <article>
-        {/* {postData.id} */}
+      <article className={utilStyles.container}>
       <h1 className={utilStyles.headingTitle}>{postData.title} </h1>
       <br />
-      <Date dateString={postData.date} />
+      <div className={utilStyles.lightText}>
+        <Date dateString={postData.date} />
+      </div> 
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

@@ -18,9 +18,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-.hero {
-  height: 50vh;
-  width: 100vw;
-  background-color: orange;
-}

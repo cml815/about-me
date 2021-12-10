@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-import styles from '../components/layout.module.css'
+import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 
 // https://nextjs.org/learn/basics/assets-metadata-css/polishing-layout

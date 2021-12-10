@@ -1,6 +1,6 @@
 ---
 Title: 'Content and COVID'
-Date: '2021-12-07'
+date: '2020-12-07'
 ---
 
 # Content and Covid-19

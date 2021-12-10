@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
+import Date from '../components/date'
+
 
 // https://nextjs.org/learn/basics/assets-metadata-css/polishing-layout
 
@@ -75,6 +78,24 @@ export default function Home({ allPostsData }) {
         <section>
         <h2>Add Blog Section Here</h2>
         <a href="https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops">Link to Tutorial</a>
+        <section className={styles.headingMd}>
+        <h2 className={styles.headingLg}>Blog</h2>
+        <ul className={styles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={styles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>
+              <a>{title}</a>
+              </Link>
+              <br />
+              {id}
+              <br />
+            <small className={styles.lightText}>
+              <Date dateString={date} />
+            </small>
+            </li>
+          ))}
+        </ul>
+      </section>
 
         
       </section>

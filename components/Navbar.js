@@ -5,17 +5,17 @@ export default function Navbar () {
   return (
   <nav className={styles.navWrap}>
     <ul className={styles.menuLinks}>
-      <li classname={styles.menuItem}>
+      <li className={styles.menuItem}>
         <Link href="/">
           <a>Home</a>
         </Link>
       </li>
-      <li classname={styles.menuItem}>
+      <li className={styles.menuItem}>
         <Link href="/about">
           <a>About</a>
         </Link>
       </li>
-      <li classname={styles.menuItem}>
+      <li className={styles.menuItem}>
         <Link href="/portfolio">
           <a>Portfolio</a>
         </Link>

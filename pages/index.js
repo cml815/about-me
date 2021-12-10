@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
       <Navbar />
 
       <main className={styles.main}>
-        <section class="hero">
+        <section className="hero">
 
           <h1 className={styles.title}>
            Technical == Creative 

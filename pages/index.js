@@ -31,13 +31,13 @@ export default function Home({ allPostsData }) {
       <Navbar />
 
       <main className={styles.main}>
-        <section className="hero">
+        <section className={styles.hero}>
 
           <h1 className={styles.title}>
-           Technical == Creative 
+          Writer &amp; Web Designer  
         </h1>
-        <h2 className={styles.title}>
-        (Creative&#41; Technical Designer and Writer
+        <h2 className={styles.subtitle}>
+        I use story and design to connect people to what helps and heals. My work helps healthcare and tech companies relate to those who need them.  
         </h2>
         </section>
        

@@ -18,3 +18,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* LAYOUT STYLES*/
+
+/* Simple gallery */
+
+.grid {
+  display: grid;
+}

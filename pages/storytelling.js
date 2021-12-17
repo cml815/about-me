@@ -4,10 +4,10 @@ import Link from 'next/link'
 export default function Story () {
   return (
     <Layout>
-      <div class='hero projects'>
+      <div className='hero projects'>
         <h1>Your Company's Story</h1>
       </div>
-      <div class='flex'>
+      <div className='flex'>
         <Link href='#'>
           <a>Case Study</a>
         </Link>

@@ -46,7 +46,7 @@ export default function Home({ allPostsData }) {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="./storytelling" className={styles.card}>
             <h2>Stories on Tech Companies and Startups &rarr;</h2>
             <p>Interviews, case studies and feature articles.</p>
           </a>

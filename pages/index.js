@@ -32,12 +32,11 @@ export default function Home({ allPostsData }) {
 
       <main className={styles.main}>
         <section className={styles.hero}>
-
           <h1 className={styles.title}>
           Writer &amp; Web Designer  
         </h1>
         <h2 className={styles.subtitle}>
-        I use story and design to connect people to what helps and heals. My work helps healthcare and tech companies relate to those who need them.  
+        I use story and design to connect health and tech companies with   those searching for them.  
         </h2>
         </section>
        

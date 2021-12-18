@@ -14,4 +14,3 @@ const nextConfig = {
 
 /** Wrap the config so it can add all of the necessary configuration to process MDX files. */
 module.exports = withMDX(nextConfig);
-

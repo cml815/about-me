@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import sample1 from '../public/images/unsample1.jpg'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
@@ -47,6 +48,15 @@ export default function Home({ allPostsData }) {
 
         <div className={styles.grid}>
           <a href="./storytelling" className={styles.card}>
+            <Image 
+             src={sample1}
+             alt="Sample 1"
+             // width={500} automatically provided
+             // height={500} automatically provided
+             // blurDataURL="data:..." automatically provided
+             // placeholder="blur" // Optional blur-up while loading
+            /> 
+
             <h2>Stories on Tech Companies and Startups &rarr;</h2>
             <p>Interviews, case studies and feature articles.</p>
           </a>

@@ -78,7 +78,7 @@ export default function Home({ allPostsData }) {
         <h2>Add Blog Section Here</h2>
         <a href="https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops">Link to Tutorial</a>
         <section className={styles.headingMd}>
-        <h2 className={styles.headingLg}>Blog</h2>
+        <h2 className={styles.container}>Blog</h2>
         <ul className={styles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={styles.listItem} key={id}>

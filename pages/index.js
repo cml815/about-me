@@ -83,11 +83,8 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title }) => (
             <li className={styles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
-              <a>{title}</a>
+              <a className={styles.boldLink}>{title}</a>
               </Link>
-              <br />
-              {id}
-              <br />
             <small className={styles.lightText}>
               <Date dateString={date} />
             </small>

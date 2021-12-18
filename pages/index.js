@@ -51,7 +51,7 @@ export default function Home({ allPostsData }) {
             <Image 
              src={sample1}
              alt="Sample 1"
-             // width={500} automatically provided
+             // width={400}
              // height={500} automatically provided
              // blurDataURL="data:..." automatically provided
              // placeholder="blur" // Optional blur-up while loading

@@ -43,3 +43,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Uses multiple classNames using this Stack Overflow solution:
 
 https://stackoverflow.com/questions/65912413/how-to-add-multiple-classnames-to-nextjs-elements
+
+### Images in MD/MDX
+
+This didn't work:
+<img src="../../images/unsample2.jpg" title="title" alt="alt text" style=width:200px;/>

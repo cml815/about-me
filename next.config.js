@@ -2,15 +2,40 @@ module.exports = {
   reactStrictMode: true,
 }
 
-// next.config.js
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
-});
-
-const nextConfig = {
-  /** Tell Next that it should render MDX files as page if they're in the page directory. */
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+})
+module.exports = withMDX({
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-};
+})
 
-/** Wrap the config so it can add all of the necessary configuration to process MDX files. */
-module.exports = withMDX(nextConfig);
+/* 
+module.exports = {
+  // Prefer loading of ES Modules over CommonJS
+  experimental: {esmExternals: true},
+  // Support MDX files as pages:
+  pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
+  // Support loading `.md`, `.mdx`:
+  webpack(config, options) {
+    config.module.rules.push({
+      test: /\.mdx?$/,
+      use: [
+        // The default `babel-loader` used by Next:
+        options.defaultLoaders.babel,
+        {
+          loader: '@mdx-js/loader',
+          /** @type {import('@mdx-js/loader').Options} */
+          options: {/* jsxImportSource: …, otherOptions… */}
+        }
+      ]
+    })
+
+    return config
+  }
+}
+
+*/
